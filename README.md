@@ -31,7 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 1. Step
 
-run command ` git clone `.
+run command ` git clone https://github.com/vishal538/Experis-IT-Manpower.git`.
 
 2. step
 
@@ -39,7 +39,9 @@ run command `npm i`
 
 3. step 
 
-run the application in browser
+4. ng serve --open --port 4200
+
+run the application in browser with url- http://localhost:4200
 
 
 happy coding!!!! :)
