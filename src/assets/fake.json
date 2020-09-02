@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "location": "Delhi"
+     
+    },
+    {
+        "id": 2,
+        "location": "Uttar Pardesh"
+       
+      },
+      {
+        "id": 1,
+        "location": "Mumbai"
+       
+      },
+      {
+        "id": 1,
+        "location": "Bihar"
+       
+      },
+      {
+        "id": 1,
+        "location": "Haryana"
+       
+      },
+      {
+        "id": 1,
+        "location": "Punjab"
+       
+      },
+      {
+        "id": 1,
+        "location": "Nasik"
+       
+      }
+]

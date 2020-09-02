@@ -1,0 +1,45 @@
+.imageStyle{
+  width: 60%;
+  height: auto;
+  margin: 3.6rem;
+  text-align: center;
+}
+.heading{
+  margin: 1rem;
+}
+.main{
+  background-color: rgb(225, 232, 233);
+} 
+h4{
+  text-align:center;
+}
+.launchyear{
+  color: blue
+}
+ @media screen and (max-width: 600px) {
+  .btn {
+    margin: 2rem;
+  }
+} 
+@media only screen and (min-width: 781px) and (max-width: 1030px)  {
+  .flexprop{
+padding-right: 0%;
+padding-left: 0%;
+margin: 2rem;
+}
+}
+.row{
+      margin-right:0px; 
+   margin-left: 0px;
+}
+.heading{
+ margin: 1rem;
+ color: blue;
+}
+
+	/**
+   **********************************************************************************
+   *@author vishal.yadav
+   *Author		    	:	  vishal.yadav
+   *Project Name		: 	Experis IT Manpower
+	 **********************************************************************************/

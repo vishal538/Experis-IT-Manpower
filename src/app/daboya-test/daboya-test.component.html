@@ -1,0 +1,106 @@
+
+<div class="container-fluid main">
+    <h3>SpaceX Launch programs</h3>
+    <div class="row">
+        <div class="col-sm-2 col-md-3 col-lg-2">
+            <div class="card">
+                <h4>Filter</h4>
+                <h4>Launch Year</h4>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6 flexprop">
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2006')">2006</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2008')">2008</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2010')">2010</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('20012')">2012</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2014')">2014</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2016')">2016</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2018')">2018</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2020')">2020</button>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 flexprop">
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2007')">2007</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2009')">2009</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2011')">2011</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('20013')">2013</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2015')">2015</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2017')">2017</button>
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2019')">2019</button>
+                        <!-- <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchYear('2020')">2020</button> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="heading">Successful Launch</h5>
+                    <div class="col-sm-6 col-lg-6">
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchSuccess(true)">true</button>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <button type="button" class="btn btn-success mt-3"
+                            (click)="filterLaunchSuccess(false)">false</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <h5 class="heading">Successful Landing</h5>
+                    <div class="col-lg-6">
+                        <button type="button" class="btn btn-success mt-3 mb-3"
+                            (click)=" filterLandSuccess(true)">true</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <button type="button" class="btn btn-success mt-3 mb-3"
+                            (click)=" filterLandSuccess(false)">false</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-md-9 col-lg-10">
+            <div class="card">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4" *ngFor=" let item of posts">
+                        <div class="card mt-4">
+                            <div>
+                                <img class="imageStyle" src="{{item.links.mission_patch}}">
+                            </div>
+                            <div>
+                                <h5 class="heading">{{item.mission_name}}</h5>
+                            </div>
+                            <div class="container">
+                                <ul *ngFor="let items of item.mission_id">
+                                    <li>Mission Ids: <span class="launchyear">{{items}}</span></li>
+                                </ul>
+                                <div>
+                                    <h5> launch Year: <span class="launchyear">{{item.launch_year}}</span></h5>
+                                </div>
+                                <div>
+                                    <h5>Successful launch: <span class="launchyear">{{item.launch_success}}</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------------------------------------------------------------
+*@author vishal.yadav
+*Author		    	:	  Vishal.Yadav
+*Project Name		: 	  Experis IT Manpower Project 
+----------------------------------------------------------------->
