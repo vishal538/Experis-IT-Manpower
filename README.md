@@ -42,6 +42,11 @@ run command `npm i`
 4. ng serve --open --port 4200
 
 run the application in browser with url- http://localhost:4200
+<<<<<<< Updated upstream
+=======
+
+Note:- You can find the Light House report in path https://github.com/vishal538/Experis-IT-Manpower/tree/master/src/assets/LightHouse/images/
+>>>>>>> Stashed changes
 
 
 happy coding!!!! :)
